@@ -30,5 +30,6 @@ jobs:
         uses: peter-evans/create-pull-request@c0f553fe549906ede9cf27b5156039d195d2ece0 # v8.1.0
         with:
           branch: sync/all
+          base: main
           title: Sync translations
           body: "This PR was generated automatically by the sync translations workflow.\n\n```\n${{ steps.sync.outputs.result }}\n```"
