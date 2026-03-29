@@ -31,4 +31,4 @@ jobs:
         with:
           branch: sync/all
           title: Sync translations
-          body: printf 'This PR was generated automatically by the sync translations workflow.\n\n```\n%s\n```' "${{ steps.sync.outputs.result }}"
+          body: "This PR was generated automatically by the sync translations workflow.\n\n```\n${{ steps.sync.outputs.result }}\n```"
