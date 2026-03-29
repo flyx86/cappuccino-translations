@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8' ?>
+<?xml version="1.0" encoding="utf-8"?>
 <cafe>
 	<achievement>
 		<text id="Basic_Achievement_Boughtdeco" name="Café renommé" />
@@ -16,11 +16,27 @@
 		<text id="Basic_Achievement_Jobserve" name="Distributeur éclair" />
 		<text id="Basic_Achievement_Masteies" name="Comis très rapide" />
 		<text id="Basic_Achievement_Masteriesgold" name="Le super coupeur de légumes" />
+		<text id="Basic_Achievement_Muffinmancash" name="Generous Muffin" />
+		<text id="Basic_Achievement_Muffinmangold" name="Golden Muffin" />
+		<text id="Basic_Achievement_Overcookedfoods" name="Supreme Spoiler" />
+		<text id="Basic_Achievement_Servingcountmeals" name="Hefty Chef" />
+		<text id="Basic_Achievement_Servingcountsalads" name="Fresh taster" />
+		<text id="Basic_Achievement_Servingcountsnacks" name="Munchies Muffin" />
+		<text id="Basic_Achievement_Servingcountsoups" name="Slurpy Soup Cook" />
+		<text id="Basic_Achievement_Servingcountsweets" name="Busy Baker" />
+		<text id="Basic_Achievement_Servingcountvegans" name="Flowery Cauliflower" />
 		<text id="Basic_Achievement_Servingscount" name="Familles Fütterer" />
 		<text id="Basic_Achievement_Solditems" name="Bricoleur remarquable" />
 		<text id="Basic_Achievement_Spentchips" name="Saucier gaspilleur" />
 		<text id="Basic_Achievement_Spentgold" name="Gastronome d’or" />
 		<text id="Basic_Achievement_Wheeloffortune" name="Mets délicat tournant" />
+		<text id="Social_Achievement_Friendscount1" name="Cooking Celebrity" />
+		<text id="Social_Achievement_Friendscount2" name="Cooking Celebrity" />
+		<text id="Social_Achievement_Friendscount3" name="Cooking Celebrity" />
+		<text id="Social_Achievement_Friendscount4" name="Cooking Celebrity" />
+		<text id="Social_Achievement_Friendscount5" name="Cooking Celebrity" />
+		<text id="new_test" name="New Test" />
+		<text id="new_test_2" name="New Test 2" />
 		<text id="Social_Achievement_Friendscount" name="Communauté des rôtisseurs" />
 	</achievement>
 </cafe>
