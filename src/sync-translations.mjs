@@ -2,6 +2,7 @@ import { XMLBuilder, XMLParser } from "fast-xml-parser";
 import fs from "fs";
 
 const DEFAULT_LANG = "en";
+const LANG_DIR = "./langs";
 
 const parser = new XMLParser({
   ignoreAttributes: false,
@@ -16,11 +17,11 @@ const builder = new XMLBuilder({
 });
 
 function readXml(lang) {
-  return fs.readFileSync(`./locales/Cafe_${lang}.xml`).toString();
+  return fs.readFileSync(`${LANG_DIR}/Cafe_${lang}.xml`).toString();
 }
 
 function writeXml(lang, xml) {
-  fs.writeFileSync(`./locales/Cafe_${lang}.xml`, xml, "utf-8");
+  fs.writeFileSync(`${LANG_DIR}/Cafe_${lang}.xml`, xml, "utf-8");
 }
 
 function collapseEmptyTags(contents) {
@@ -28,7 +29,7 @@ function collapseEmptyTags(contents) {
 }
 
 function getLang(file) {
-  return file.replace("Cafe_", "").replace(".xml", "");
+  return file.match(/^Cafe_([a-z]{2})\.xml$/)?.[1];
 }
 
 function syncNode(src, dest, stats) {
@@ -75,12 +76,17 @@ function syncLang(lang, src) {
 (function syncAll() {
   const xml = readXml(DEFAULT_LANG);
   const src = parser.parse(xml);
-  const files = fs.readdirSync("./locales");
+  const files = fs.readdirSync(LANG_DIR);
 
   console.log(`Default language: ${DEFAULT_LANG}`);
 
   files.forEach((file) => {
     const lang = getLang(file);
+
+    if (!lang) {
+      console.log(`⚠  ${file} — skipping (lang not found)`);
+      return;
+    }
 
     if (lang !== DEFAULT_LANG) {
       syncLang(lang, src);
