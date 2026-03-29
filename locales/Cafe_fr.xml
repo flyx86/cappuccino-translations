@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<cafe>
+	<achievement>
+		<text id="Basic_Achievement_Boughtdeco" name="Café renommé" />
+		<text id="Basic_Achievement_Boughtingredients" name="Le roi des ingrédients" />
+		<text id="Basic_Achievement_Cookingcount" name="Un bon rôtisseur" />
+		<text id="Basic_Achievement_Coopcount" name="Muffin assortis" />
+		<text id="Basic_Achievement_Coopgoldcount" name="Fin cuisto" />
+		<text id="Basic_Achievement_Curiercount" name="Plat exclusif" />
+		<text id="Basic_Achievement_Differentdishes" name="Restaurateur excellent" />
+		<text id="Basic_Achievement_Earnedchips" name="Glacier astucieux" />
+		<text id="Basic_Achievement_Fancycount" name="Précieux collègue" />
+		<text id="Basic_Achievement_Firenpc" name="Rôtisseur éclair" />
+		<text id="Basic_Achievement_Instantcount" name="Potier impatient" />
+		<text id="Basic_Achievement_Jobclean" name="Nettoyeur éclair" />
+		<text id="Basic_Achievement_Jobserve" name="Distributeur éclair" />
+		<text id="Basic_Achievement_Masteies" name="Comis très rapide" />
+		<text id="Basic_Achievement_Masteriesgold" name="Le super coupeur de légumes" />
+		<text id="Basic_Achievement_Servingscount" name="Familles Fütterer" />
+		<text id="Basic_Achievement_Solditems" name="Bricoleur remarquable" />
+		<text id="Basic_Achievement_Spentchips" name="Saucier gaspilleur" />
+		<text id="Basic_Achievement_Spentgold" name="Gastronome d’or" />
+		<text id="Basic_Achievement_Wheeloffortune" name="Mets délicat tournant" />
+		<text id="Social_Achievement_Friendscount" name="Communauté des rôtisseurs" />
+	</achievement>
+</cafe>
