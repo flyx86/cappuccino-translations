@@ -31,5 +31,6 @@
 			<text id="Basic_Achievement_Spentgold" name="Golden Cooker"  />
 			<text id="Basic_Achievement_Wheeloffortune" name="Spinning Spud"  />
 			<text id="Social_Achievement_Friendscount" name="Cooking Celebrity"  />
+			<text id="new_test" name="New Test"  />
 		</achievement>
 	</cafe>
