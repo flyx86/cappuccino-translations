@@ -20,11 +20,15 @@ jobs:
         run: npm install
 
       - name: Sync translations
-        run: npm run sync
+        id: sync
+        run: |
+          echo "result<<EOF" >> $GITHUB_OUTPUT
+          npm run sync --silent >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@c0f553fe549906ede9cf27b5156039d195d2ece0 # v8.1.0
         with:
           branch: sync/all
           title: Sync translations
-          body: This PR was generated automatically by the sync translations workflow.
+          body: This PR was generated automatically by the sync translations workflow.\n${{ steps.sync.outputs.result }}
